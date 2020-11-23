@@ -1,0 +1,131 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Code Starts Here */
+
+nav {
+    /* border: 3px solid red !important; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    font-family: 'Arima Madurai', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+nav .nav-links ul {
+    /* border: 3px solid blue; */
+    display: flex;
+    font-family: Raleway, sans-serif;
+    align-items: center;
+
+}
+
+nav .nav-links ul li {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.login-btn {
+    border-radius: 2px;
+    background: linear-gradient(90deg, #F84100, #F4881A);
+    padding: 7px 40px 7px 40px !important;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.first-page {
+    min-height: 90vh;
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap; 
+}
+
+.first-page .text-col {
+    font-family: Raleway, sans-serif;
+    width: 350px;
+}
+
+.first-page .text-col h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.first-page .img-col {
+    margin-left: 200px;
+
+}
+
+.rect-1, .rect-2, .rect-3 {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .first-page .img-col {
+        display: none;
+    
+    }
+
+    .first-page .text-col {
+        width: 100%;
+        text-align: center;
+    
+    }
+
+    /* red */
+    .rect-2 {
+        display: block;
+        position: absolute;
+        top: 20vh;
+        right: 10vw;
+    }
+
+    /* yellow */
+    .rect-1 {
+        display: block;
+        position: absolute;
+        top: 70vh;
+        right: 30vw;
+    }
+
+    /* green */
+    .rect-3 { 
+        display: block;
+        position: absolute;
+        top: 80vh;
+        right: 15vw;
+    }
+
+  }
